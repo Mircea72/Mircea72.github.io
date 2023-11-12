@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mircea C CV</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Mircea Crisan.</h1>
+    <img
+      width="250"
+      height="200"
+      src="images/road-1072821_1920.jpg"
+      alt="selfie"
+    />
+
+    <p id="job-title">Student @ FastTrackIT</p>
+
+    <ul id="top-menu-bar">
+      <menu type="toolbar"></menu>
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">Skills</a></li>
+      <li><a href="#" class="active">Projects</a></li>
+      <li><a href="#">Languages</a></li>
+    </ul>
+
+    <h2>Skills</h2>
+
+    <ul>
+      <li class="favorite">HTML</li>
+      <li>CSS</li>
+      <li class="favorite">JS</li>
+    </ul>
+
+    <h2>Known Languages</h2>
+    <table border="1">
+      <tr>
+        <th>Language</th>
+        <th>Level</th>
+      </tr>
+      <tr>
+        <td class="favorite">Romanian</td>
+        <td>Native</td>
+      </tr>
+      <tr>
+        <td>Eglish</td>
+        <td>Profesional</td>
+      </tr>
+    </table>
+    <a
+      href="https://fasttrackit.org/cursuri-it-cluj-napoca/?gclid=EAIaIQobChMI2cb9prLpgQMV8oVoCR3HmQEuEAAYASAAEgKAZ_D_BwE"
+      target="_blank"
+      >Fasttrackit</a
+    >
+
+    <form action="secretara.html">
+      <h2>Contact</h2>
+      <div>
+        <label for="userEmail">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="userEmail"
+          placeholder="your@email.com"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="userName">Your Name</label>
+        <input
+          type="text"
+          name="name"
+          id="userName"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      <button type="submit">Send</button>
+    </form>
+
+    <p>
+      start server: CTRL + Shift + P -> Browser Sync mode in Browser -> Enter ->
+      / -> Enter
+    </p>
+
+    <footer>
+      open my
+      <a
+        href="https://www.lifewire.com/make-an-arrow-on-a-keyboard"
+        target="_blank"
+        >lifewire</a
+      >
+      account.
+    </footer>
+
+    <script>
+      console.info(2 + 3);
+      console.warn("Mircea Crisan");
+
+      var employed = true;
+      var age = 18;
+      console.log("Angajat:", employed);
+      employed = false;
+      console.log("Angajat:", employed);
+      employed = "da";
+      console.log("Angajat:", employed);
+
+      var skills = ["html", "CSS"];
+      console.debug("tipul variabilei skills", typeof skills);
+
+      var job = document.getElementById("job-title");
+      console.warn("job", job);
+      console.info(typeof job);
+    </script>
+  </body>
+</html>
