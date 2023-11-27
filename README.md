@@ -4,4 +4,4 @@ my personal CV
 
 ## Live
 
-[mircea72.github.io](https://github.com/Mircea72/Mircea72.github.io)
+[mircea72.github.io](https://Mircea72.github.io)

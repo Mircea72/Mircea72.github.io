@@ -7,34 +7,41 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Mircea Crisan.</h1>
+    <h1 class="name">Mircea Crisan.</h1>
     <img
       width="250"
       height="200"
       src="images/road-1072821_1920.jpg"
       alt="selfie"
     />
-
     <p id="job-title">Student @ FastTrackIT</p>
-
     <ul id="top-menu-bar">
-      <menu type="toolbar"></menu>
-      <li><a href="#">HOME</a></li>
-      <li><a href="#">Skills</a></li>
-      <li><a href="#">Projects</a></li>
-      <li><a href="#">Languages</a></li>
+      <menu type="toolbar">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Languages</a></li>
+      </menu>
     </ul>
+    <div style="display: none">
+      <div>
+        <h2>Home</h2>
+        <p>Welcome</p>
+      </div>
+    </div>
 
     <h2>Skills</h2>
-
     <ul>
       <li class="favorite">HTML</li>
       <li>CSS</li>
       <li class="favorite">JS</li>
     </ul>
 
+    <h2>Projects</h2>
+    <p>...</p>
+
     <h2>Known Languages</h2>
-    <table border="1">
+    <table border="8">
       <tr>
         <th>Language</th>
         <th>Level</th>
@@ -95,25 +102,7 @@
       account.
     </footer>
 
-    <script>
-      console.info(2 + 3);
-      console.warn("Mircea Crisan");
-
-      var employed = true;
-      var age = 18;
-      console.log("Angajat:", employed);
-      employed = false;
-      console.log("Angajat:", employed);
-      employed = "da";
-      console.log("Angajat:", employed);
-
-      var skills = ["html", "CSS"];
-      console.debug("tipul variabilei skills", typeof skills);
-
-      var job = document.getElementById("job-title");
-      console.warn("job", job);
-      console.info(typeof job);
-    </script>
+    <script src="index.js"></script>
   </body>
 </html>
 class="active"
