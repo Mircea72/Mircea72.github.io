@@ -7,90 +7,108 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1 class="name">Mircea Crisan.</h1>
-    <img
-      width="250"
-      height="200"
-      src="images/road-1072821_1920.jpg"
-      alt="selfie"
-    />
-    <p id="job-title">Student @ FastTrackIT</p>
-    <ul id="top-menu-bar">
-      <menu type="toolbar">
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Languages</a></li>
-      </menu>
-    </ul>
-    <div style="display: none">
-      <div>
-        <h2>Home</h2>
-        <p>Welcome</p>
+    <header>
+      <div style="display: flex">
+        <div>
+          <img height="100" src="images/road-1072821_1920.jpg" alt="selfie" />
+        </div>
+        <div>
+          <h1 class="name">Mircea Crisan.</h1>
+          <p id="job-title">Student @ FastTrackIT</p>
+        </div>
       </div>
-    </div>
 
-    <h2>Skills</h2>
-    <ul>
-      <li class="favorite">HTML</li>
-      <li>CSS</li>
-      <li class="favorite">JS</li>
-    </ul>
+      <ul id="top-menu-bar">
+        <li><a href="#" onclick="showHome()">HOME</a></li>
+        <li><a href="#" onclick="showSkills()">Skills</a></li>
+        <li>
+          <a href="#" onclick="showProjects()" class="active">Projects</a>
+        </li>
+        <li><a href="#" onclick="showLanguages()">Languages</a></li>
+      </ul>
+    </header>
+    <!-- linia 28 -->
+    <section id="content">
+      <div id="side-menu">
+        <section>
+          <form action="secretara.html">
+            <h2>Contact</h2>
+            <div>
+              <label for="userEmail">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="userEmail"
+                placeholder="your@email.com"
+                required
+              />
+            </div>
 
-    <h2>Projects</h2>
-    <p>...</p>
+            <div>
+              <label for="userName">Your Name</label>
+              <input
+                type="text"
+                name="name"
+                id="userName"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+            <button type="submit">Send</button>
+          </form>
+        </section>
+        <section>
+          <p>
+            start server: CTRL + Shift + P -> Browser Sync mode in Browser ->
+            Enter -> / -> Enter
+          </p>
+        </section>
+      </div>
+      <div id="main">
+        <div id="home" style="display: none">
+          <h2>Home</h2>
+          <p>Welcome</p>
+        </div>
 
-    <h2>Known Languages</h2>
-    <table border="8">
-      <tr>
-        <th>Language</th>
-        <th>Level</th>
-      </tr>
-      <tr>
-        <td class="favorite">Romanian</td>
-        <td>Native</td>
-      </tr>
-      <tr>
-        <td>Eglish</td>
-        <td>Profesional</td>
-      </tr>
-    </table>
+        <div id="skills" style="display: none">
+          <h2>Skills</h2>
+          <ul>
+            <li class="favorite">HTML</li>
+            <li>CSS</li>
+            <li class="favorite">JS</li>
+          </ul>
+        </div>
+        <div id="projects">
+          <h2>Projects</h2>
+          <p>...</p>
+        </div>
+
+        <div style="display: none" id="languages">
+          <h2>Known Languages</h2>
+          <table border="8">
+            <tr>
+              <th>Language</th>
+              <th>Level</th>
+            </tr>
+            <tr>
+              <td class="favorite">Romanian</td>
+              <td>Native</td>
+            </tr>
+            <tr>
+              <td>Eglish</td>
+              <td>Profesional</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!--
     <a
       href="https://fasttrackit.org/cursuri-it-cluj-napoca/?gclid=EAIaIQobChMI2cb9prLpgQMV8oVoCR3HmQEuEAAYASAAEgKAZ_D_BwE"
       target="_blank"
       >Fasttrackit</a
-    >
-
-    <form action="secretara.html">
-      <h2>Contact</h2>
-      <div>
-        <label for="userEmail">Email</label>
-        <input
-          type="email"
-          name="email"
-          id="userEmail"
-          placeholder="your@email.com"
-          required
-        />
-      </div>
-
-      <div>
-        <label for="userName">Your Name</label>
-        <input
-          type="text"
-          name="name"
-          id="userName"
-          placeholder="Enter your name"
-          required
-        />
-      </div>
-      <button type="submit">Send</button>
-    </form>
-
-    <p>
-      start server: CTRL + Shift + P -> Browser Sync mode in Browser -> Enter ->
-      / -> Enter
-    </p>
+    >    -->
 
     <footer>
       open my
@@ -105,4 +123,6 @@
     <script src="index.js"></script>
   </body>
 </html>
+<!--
 class="active"
+-->
