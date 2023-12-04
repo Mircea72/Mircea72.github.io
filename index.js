@@ -33,3 +33,14 @@ function showLanguages() {
   var page = document.getElementById("languages");
   page.style.display = "block";
 }
+
+/*
+function activate("projects") {
+  document.getElementById("home").style.display = "none";
+  document.getElementById("skills").style.display = "none";
+  document.getElementById("languages").style.display = "none";
+
+  var page = document.getElementById("projects");
+  page.style.display = "block";
+}
+*/
