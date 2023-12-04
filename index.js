@@ -1,46 +1,40 @@
-function show(id) {
-  console.info("show", id);
-
-  var page = document.getElementById("id");
-  console.info("page", page);
-  page.style.display = "block";
-}
+var activePage;
 
 function hide(id) {
   console.info("hide", id);
   document.getElementById(id).style.display = "none";
 }
 
-function showHome() {
-  hide("skills");
-  hide("projects");
-  hide("languages");
+function show(id) {
+  console.info("show", id);
 
-  show("home");
+  var page = document.getElementById("id");
+  console.debug("show page", page);
+  page.style.display = "block";
+}
+
+function showHome() {
+  hide(activePage);
+  show("HOME");
+  activePage = "HOME";
 }
 
 function showSkills() {
-  hide("home");
-  hide("projects");
-  hide("languages");
-
-  show("skills");
+  hide(activePage);
+  show("Skills");
+  activePage = "Skills";
 }
 
 function showProjets() {
-  hide("home");
-  hide("skills");
-  hide("languages");
-
+  hide(activePage);
   show("Projects");
+  activePage = "Projects";
 }
 
 function showLanguages() {
-  hide("home");
-  hide("skills");
-  hide("projects");
-
+  hide(activePage);
   show("Languages");
+  activePage = "Languages";
 }
 
 /*
@@ -54,3 +48,4 @@ function showRubik () {
   page.style.display = "block";
 }
 */
+/* */
