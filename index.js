@@ -35,12 +35,13 @@ function showLanguages() {
 }
 
 /*
-function activate("projects") {
+function showRubik () {
   document.getElementById("home").style.display = "none";
   document.getElementById("skills").style.display = "none";
+  document.getElementById("projects").style.display = "none";
   document.getElementById("languages").style.display = "none";
 
-  var page = document.getElementById("projects");
+  var page = document.getElementById("rubik");
   page.style.display = "block";
 }
 */
