@@ -1,4 +1,4 @@
-var activePage;
+var activePage = "projects";
 
 function hide(id) {
   console.info("hide", id);
@@ -7,34 +7,16 @@ function hide(id) {
 
 function show(id) {
   console.info("show", id);
-
-  var page = document.getElementById("id");
+  var page = document.getElementById(id);
   console.debug("show page", page);
   page.style.display = "block";
 }
 
-function showHome() {
+function showPage(id) {
+  console.info("show page", id);
   hide(activePage);
-  show("HOME");
-  activePage = "HOME";
-}
-
-function showSkills() {
-  hide(activePage);
-  show("Skills");
-  activePage = "Skills";
-}
-
-function showProjets() {
-  hide(activePage);
-  show("Projects");
-  activePage = "Projects";
-}
-
-function showLanguages() {
-  hide(activePage);
-  show("Languages");
-  activePage = "Languages";
+  show(id);
+  activePage = id;
 }
 
 /*
@@ -48,4 +30,4 @@ function showRubik () {
   page.style.display = "block";
 }
 */
-/* */
+/* Use show page use id param*/

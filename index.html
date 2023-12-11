@@ -19,12 +19,14 @@
       </div>
 
       <ul id="top-menu-bar">
-        <li><a href="#" onclick="showHome()">HOME</a></li>
-        <li><a href="#" onclick="showSkills()">Skills</a></li>
+        <li><a href="#" onclick="showPage('home')">HOME</a></li>
+        <li><a href="#" onclick="showPage('skills')">Skills</a></li>
         <li>
-          <a href="#" onclick="showProjects()" class="active">Projects</a>
+          <a href="#" onclick="showPage('projects')" class="active">Projects</a>
         </li>
-        <li><a href="#" onclick="showLanguages()">Languages</a></li>
+        <li>
+          <a href="#" onclick="showPage('languages')">Languages</a>
+        </li>
       </ul>
     </header>
     <!-- linia 28 -->
@@ -65,12 +67,12 @@
         </section>
       </div>
       <div id="main">
-        <div id="home" style="display: none">
+        <div id="home" class="page" style="display: none">
           <h2>Home</h2>
           <p>Welcome</p>
         </div>
 
-        <div id="skills" style="display: none">
+        <div id="skills" class="page" style="display: none">
           <h2>Skills</h2>
           <ul>
             <li class="favorite">HTML</li>
@@ -78,12 +80,12 @@
             <li class="favorite">JS</li>
           </ul>
         </div>
-        <div id="projects">
+        <div id="projects" class="page">
           <h2>Projects</h2>
           <p>...</p>
         </div>
 
-        <div style="display: none" id="languages">
+        <div style="display: none" class="page" id="languages">
           <h2>Known Languages</h2>
           <table border="8">
             <tr>
@@ -103,13 +105,6 @@
       </div>
     </section>
 
-    <!--
-    <a
-      href="https://fasttrackit.org/cursuri-it-cluj-napoca/?gclid=EAIaIQobChMI2cb9prLpgQMV8oVoCR3HmQEuEAAYASAAEgKAZ_D_BwE"
-      target="_blank"
-      >Fasttrackit</a
-    >    -->
-
     <footer>
       open my
       <a
@@ -123,6 +118,10 @@
     <script src="index.js"></script>
   </body>
 </html>
+
 <!--
 class="active"
 -->
+<!--    <a  href="https://fasttrackit.org/cursuri-it-cluj-napoca/
+  ?gclid=EAIaIQobChMI2cb9prLpgQMV8oVoCR3HmQEuEAAYASAAEgKAZ_D_BwE" 
+  target="_blank" >Fasttrackit</a>    -->
