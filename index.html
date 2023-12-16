@@ -19,17 +19,21 @@
       </div>
 
       <ul id="top-menu-bar">
-        <li><a href="#" onclick="showPage('home')" class="active">HOME</a></li>
+        <li><a href="#" onclick="showPage('home')">HOME</a></li>
         <li><a href="#" onclick="showPage('skills')">Skills</a></li>
         <li>
-          <a href="#" onclick="showPage('projects')">Projects</a>
+          <a href="#" class="active" onclick="showPage('projects')">Projects</a>
         </li>
-        <li>
-          <a href="#" onclick="showPage('languages')">Languages</a>
-        </li>
+        <li><a href="#" onclick="showPage('languages')">Languages</a></li>
+        <!--
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#" class="active">Projects</a></li>
+        <li><a href="#">Languages</a></li>
+        -->
       </ul>
     </header>
-    <!-- linia 28 -->
+
     <section id="content">
       <div id="side-menu">
         <section>
@@ -67,12 +71,12 @@
         </section>
       </div>
       <div id="main">
-        <div id="home" class="page" style="display: none">
+        <div id="home" class="page">
           <h2>Home</h2>
           <p>Welcome</p>
         </div>
 
-        <div id="skills" class="page" style="display: none">
+        <div id="skills" class="page">
           <h2>Skills</h2>
           <ul>
             <li class="favorite">HTML</li>
@@ -80,12 +84,12 @@
             <li class="favorite">JS</li>
           </ul>
         </div>
-        <div id="projects" class="page" style="display: block">
+        <div id="projects" class="page">
           <h2>Projects</h2>
           <p>...</p>
         </div>
 
-        <div style="display: none" class="page" id="languages">
+        <div id="languages" class="page">
           <h2>Known Languages</h2>
           <table border="8">
             <tr>
@@ -125,3 +129,4 @@ class="active"
 <!--    <a  href="https://fasttrackit.org/cursuri-it-cluj-napoca/
   ?gclid=EAIaIQobChMI2cb9prLpgQMV8oVoCR3HmQEuEAAYASAAEgKAZ_D_BwE" 
   target="_blank" >Fasttrackit</a>    -->
+<!---->

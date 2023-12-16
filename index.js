@@ -1,5 +1,7 @@
-var activePage = "home";
+// variabile publice
+var activePage = "projects";
 
+// functii publice
 function hide(id) {
   console.info("hide", id);
   document.getElementById(id).style.display = "none";
@@ -18,6 +20,19 @@ function showPage(id) {
   show(id);
   activePage = id;
 }
+
+function initEvents() {
+  var toolbar = document.querySelector("#top-menu-bar");
+  toolbar.addEventListener("click", function (e) {
+    var page = e.target.innerHTML.toLowerCase();
+    console.warn("event", page);
+    showPage(page);
+  });
+}
+
+// executii
+showPage(ativePage);
+initEvents();
 
 /*
 function showRubik () {
