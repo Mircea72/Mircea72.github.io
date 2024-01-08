@@ -24,25 +24,14 @@ function showPage(id) {
 function initEvents() {
   var toolbar = document.querySelector("#top-menu-bar");
   toolbar.addEventListener("click", function (e) {
-    var page = e.target.innerHTML.toLowerCase();
-    console.warn("event", page);
-    showPage(page);
+    if (e.target.matches("a")) {
+      var page = e.target.innerHTML.toLowerCase();
+      console.warn("event", page);
+      showPage(page);
+    }
   });
 }
 
 // executii
 showPage(ativePage);
 initEvents();
-
-/*
-function showRubik () {
-  document.getElementById("home").style.display = "none";
-  document.getElementById("skills").style.display = "none";
-  document.getElementById("projects").style.display = "none";
-  document.getElementById("languages").style.display = "none";
-
-  var page = document.getElementById("rubik");
-  page.style.display = "block";
-}
-*/
-/* Use show page use id param*/
