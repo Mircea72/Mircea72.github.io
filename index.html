@@ -19,12 +19,10 @@
       </div>
 
       <ul id="top-menu-bar">
-        <li><a href="#" onclick="showPage('home')">HOME</a></li>
-        <li><a href="#" onclick="showPage('skills')">Skills</a></li>
-        <li>
-          <a href="#" class="active" onclick="showPage('projects')">Projects</a>
-        </li>
-        <li><a href="#" onclick="showPage('languages')">Languages</a></li>
+        <li><a href="#" data-page="home">🏰HOME</a></li>
+        <li><a href="#" data-page="skills">Skills</a></li>
+        <li><a href="#" data-page="projects">Projects</a></li>
+        <li><a href="#" data-page="languages">Languages</a></li>
       </ul>
     </header>
 
@@ -54,6 +52,7 @@
                 required
               />
             </div>
+
             <button type="submit">Send</button>
           </form>
         </section>
@@ -65,12 +64,14 @@
         </section>
       </div>
       <div id="main">
-        <div id="home" class="page">
+        <div id="home" class="page" style="display: none">
+          <div id="home" class="page"></div>
           <h2>Home</h2>
-          <p>Welcome</p>
+          <p>Welcome...</p>
         </div>
 
-        <div id="skills" class="page">
+        <div id="skills" class="page" style="display: none">
+          <div id="skills" class="page"></div>
           <h2>Skills</h2>
           <ul>
             <li class="favorite">HTML</li>
@@ -78,12 +79,14 @@
             <li class="favorite">JS</li>
           </ul>
         </div>
+
         <div id="projects" class="page">
           <h2>Projects</h2>
           <p>...</p>
         </div>
 
-        <div id="languages" class="page">
+        <div style="display: none" class="page" id="languages">
+          <div class="page" id="languages"></div>
           <h2>Known Languages</h2>
           <table border="8">
             <tr>
