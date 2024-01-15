@@ -100,6 +100,10 @@ h1,
   font-family: "Times New Roman";
   margin-left: 20px;
 }
+
+#skills li span {
+  color: gray;
+}
 /*
 header,
 #content,
