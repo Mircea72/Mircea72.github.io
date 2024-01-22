@@ -6,12 +6,13 @@ function $(selector) {
   console.info("gaseste elementul: %o", selector);
 
   var el = document.querySelector(selector);
-  console.info("elementul gasit este", el);
+  console.info("%o found:", selector, el);
   return el;
 }
 
 function hide(id) {
   console.info("hide", id);
+  $("#" + id).style.dysplay = none;
   document.getElementById(id).style.display = "none";
 }
 
@@ -45,30 +46,8 @@ function initEvents() {
     }
   });
 }
-function showSkills() {
+function showSkills(skills) {
   var ul = $("#skills ul");
-
-  var skills = [
-    {
-      name: "HTML",
-      endorcements: 6,
-    },
-    {
-      name: "CSS",
-      endorcements: 5,
-      favorite: true,
-    },
-    {
-      name: "JS",
-      endorcements: 7,
-      favorite: true,
-    },
-    {
-      name: "word",
-      endorcements: 1,
-      favorite: false,
-    },
-  ];
 
   var text = skills.map(function (skill) {
     var cls = "";
@@ -92,6 +71,9 @@ function showSkills() {
 }             */
 
 // executii
-showSkills();
+showSkills([]);
 showPage(activePage);
 initEvents();
+
+/*
+move skills in json file
