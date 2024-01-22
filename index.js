@@ -3,22 +3,19 @@ var activePage = "skills";
 
 // functii publice
 function $(selector) {
-  console.info("gaseste elementul: %o", selector);
-
   var el = document.querySelector(selector);
-  console.info("%o found:", selector, el);
+  // console.info("%o found:", selector, el);
   return el;
 }
 
 function hide(id) {
   console.info("hide", id);
   $("#" + id).style.dysplay = none;
-  document.getElementById(id).style.display = "none";
 }
 
 function show(id) {
   console.info("show", id);
-  var page = document.getElementById(id);
+  var page = $(`#$(id)`);
   console.debug("show page", page);
   page.style.display = "block";
 }
@@ -36,7 +33,6 @@ function showPage(id) {
 }
 
 function initEvents() {
-  var toolbar = $("#top-menu-bar");
   var toolbar = $("#top-menu-bar");
   toolbar.addEventListener("click", function (e) {
     if (e.target.matches("a")) {
