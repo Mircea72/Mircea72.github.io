@@ -10,7 +10,7 @@ function $(selector) {
 
 function hide(id) {
   console.info("hide", id);
-  $("#" + id).style.dysplay = none;
+  $("#" + id).style.dysplay = "none";
 }
 
 function show(id) {
@@ -58,18 +58,18 @@ function showSkills(skills) {
 
   ul.innerHTML = text.join("");
 }
-/*
-function showSkills() {
-  var ul = document.querySelector("#skills ul");
-  ul.innerHTML = "<li>HTML</li>";
-  ul.innerHTML = ul.innerHTML + "<li>CSS</li>";
-  ul.innerHTML += "<li>JS</li>";
-}             */
+
+function loadSkills() {
+  var promise = fetch("skills.json");
+  promise.then(function (r) {
+    const jsonPromise = r.json();
+    jsonPromise.then(function (skills) {
+      showSkills(skills);
+    });
+  });
+}
 
 // executii
-showSkills([]);
 showPage(activePage);
 initEvents();
-
-/*
-move skills in json file
+loadSkills();
