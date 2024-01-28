@@ -10,12 +10,12 @@ function $(selector) {
 
 function hide(id) {
   console.info("hide", id);
-  $("#" + id).style.dysplay = "none";
+  $("#" + id).style.display = "none";
 }
 
 function show(id) {
   console.info("show", id);
-  var page = $(`#$(id)`);
+  var page = $(`#${id}`);
   console.debug("show page", page);
   page.style.display = "block";
 }
@@ -60,10 +60,8 @@ function showSkills(skills) {
 }
 
 function loadSkills() {
-  var promise = fetch("skills.json");
-  promise.then(function (r) {
-    const jsonPromise = r.json();
-    jsonPromise.then(function (skills) {
+  fetch("skills.json").then(function (r) {
+    r.json().then(function (skills) {
       showSkills(skills);
     });
   });
